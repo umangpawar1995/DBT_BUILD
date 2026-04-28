@@ -1,0 +1,18 @@
+sources:
+  - name: dbt_schema
+    database: dbt_db
+    schema: dbt_schema
+    config:
+      enabled: true
+    tables:
+      - name: SRC_CUSTOMER  # enabled
+      - name: SRC_DATE  # not enabled
+        config:
+          enabled: false
+      - name: SRC_PRODUCT  # enabled
+        config:
+          enabled: true
+      - name: SRC_STORE  # enabled
+      - name: SRC_FACT_RETURNS
+      - name: SRC_FACT_SALES
+      

@@ -1,0 +1,13 @@
+Dbt_project_1:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: BDMRRCQ-SNC58568
+      user: LEARNINGDBT26
+      password: Learningdbt@26
+      role: ACCOUNTADMIN
+      database: dbt_db
+      warehouse: dbt_wh
+      schema: dbt_schema
+      threads: 4
