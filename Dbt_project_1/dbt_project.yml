@@ -33,31 +33,25 @@ models:
   Dbt_project_1:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +database: dbt_db
       +schema: dbt_schema
       +materialized: view
     Raw:
       # Config indicated by + and applies to all files under models/example/schema/
       +materialized: table
-      +database: DEV
       +schema: RAW
     Stage:
       +materialized: table
-      +database: DEV
       +schema: STAGE
     Core:
       +materialized: table
-      +database: DEV
       +schema: CORE
 
 seeds:
   Dbt_project_1:
     # Config indicated by + and applies to all files under seeds/
     +schema: RAW
-    +database: DEV
 
 snapshots:
   Dbt_project_1:
     # Config indicated by + and applies to all files under snapshots/
     +schema: CORE
-    +database: DEV

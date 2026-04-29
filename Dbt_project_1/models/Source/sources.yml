@@ -1,6 +1,5 @@
 sources:
   - name: dbt_schema
-    database: dbt_db
     schema: dbt_schema
     config:
       enabled: true

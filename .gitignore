@@ -1,4 +1,6 @@
-# Python-generated files
+logs/
+target/
+dbt_packages/# Python-generated files
 __pycache__/
 *.py[oc]
 build/
