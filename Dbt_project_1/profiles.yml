@@ -3,9 +3,9 @@ Dbt_project_1:
   outputs:
     dev:
       type: snowflake
-      account: BDMRRCQ-SNC58568
-      user: LEARNINGDBT26
-      password: Learningdbt@26
+      account: 
+      user: 
+      password: 
       role: ACCOUNTADMIN
       database: dbt_db
       warehouse: dbt_wh
