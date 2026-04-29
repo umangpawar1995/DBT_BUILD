@@ -55,3 +55,9 @@ seeds:
     # Config indicated by + and applies to all files under seeds/
     +schema: RAW
     +database: DEV
+
+snapshots:
+  Dbt_project_1:
+    # Config indicated by + and applies to all files under snapshots/
+    +schema: CORE
+    +database: DEV

@@ -17,8 +17,20 @@ models:
       - name: first_name
         data_tests:
           - not_null
+      - name: customer_id
+        data_tests:
+          - not_null
   - name: raw_sales
     columns:
       - name: gross_amount
         data_tests:
             - generic_non_negative
+
+  - name: stg_customer
+    columns:
+      - name: customer_id
+        data_tests:
+          - not_null
+      - name: email
+        data_tests:
+          - not_null
