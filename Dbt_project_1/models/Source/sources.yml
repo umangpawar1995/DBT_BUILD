@@ -8,7 +8,7 @@ sources:
       - name: SRC_CUSTOMER  # enabled
       - name: SRC_DATE  # not enabled
         config:
-          enabled: false
+          enabled: true
       - name: SRC_PRODUCT  # enabled
         config:
           enabled: true

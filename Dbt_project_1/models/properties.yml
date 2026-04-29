@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: raw_product #  Must match the filename of a model -- including case sensitivity.
+    columns:
+      - name: product_sk
+        data_tests:
+          - unique
+          - not_null
+      - name: department
+        data_tests:
+          - accepted_values:
+              values: ['Grocery', 'Health & Beauty', 'Home', 'Toys']
+              severity: warn
+  - name: raw_customer
+    columns:
+      - name: first_name
+        data_tests:
+          - not_null
+  - name: raw_sales
+    columns:
+      - name: gross_amount
+        data_tests:
+            - generic_non_negative
